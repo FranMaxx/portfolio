@@ -13,5 +13,5 @@ lumiFi.addEventListener('click', () => {
 });
 
 cvButton.addEventListener('click', () => {
-    window.open("https://cdn.discordapp.com/attachments/843877917146218506/968650787855171654/Francisco_Lozano_portfolio_1.pdf");
+    window.open("https://cdn.discordapp.com/attachments/843877917146218506/968660443155562566/Francisco_Lozano_portfolio.pdf");
 });
