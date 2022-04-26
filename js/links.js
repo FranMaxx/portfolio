@@ -13,5 +13,5 @@ lumiFi.addEventListener('click', () => {
 });
 
 cvButton.addEventListener('click', () => {
-    window.open("https://cdn.discordapp.com/attachments/843877917146218506/965783483291164722/Copia_de_Matias_Oscar_Leiva.pdf");
+    window.open("https://cdn.discordapp.com/attachments/843877917146218506/968648754938925096/Francisco_Lozano_Portfolio.pdf");
 });
