@@ -1,0 +1,60 @@
+// Variables
+$main-color: rgb(37, 185, 76);
+$second-color: rgb(37, 216, 136);
+$pdf-color: rgb(192, 24, 24);
+$title-color: rgb(60, 60, 60);
+$alpha-3: .3;
+$alpha-2: .2;
+$alpha-1: .1;
+
+// Mixins
+@mixin flex-row (
+    $ejeX: flex-start, 
+    $ejeY: flex-start,
+    $height: 100%,
+    $width: 100%,
+    $wrap: wrap,
+) {
+    height: $height;
+    width: $width;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: $wrap;
+    align-items: $ejeY;
+    justify-content: $ejeX;
+}
+
+// Keyframes
+@keyframes typing {
+    0% { width: 0 }
+    25% { width: 85% }
+    50% { width: 85% }
+    75% { width: 85% }
+    100% { width: 0% }
+  }
+  
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: $title-color; }
+}
+
+@keyframes zoom {
+    0% {
+        transform: scale(1.0);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    0% {
+        transform: scale(1.0);
+    }
+}
+
+@keyframes mover {
+    0% {
+        transform: translateY(0) 
+    }
+    100% {
+        transform: translateY(-10px) 
+    }
+}

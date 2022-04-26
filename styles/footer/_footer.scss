@@ -1,0 +1,50 @@
+@use '../base' as *;
+
+.footer {
+    grid-area: footer;
+    display: flex;
+    justify-content: center;
+}
+
+.footerIcons {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 40%;
+}
+
+.footer a {
+    font-size: 25px;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 100%;
+}
+
+.footer a:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: #fff;
+}
+  
+
+.fa-twitter {
+    background: #55ACEE;
+    color: #fff;
+}
+
+.fa-discord {
+    background: #5b66ff;
+    color: #fff;
+}
+
+.fa-google {
+    background: #e82910;
+    color: #fff;
+}

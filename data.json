@@ -1,0 +1,16 @@
+{
+  "description": "A Front-End Web Developer passionate about creating interactive applications and experiences on the web.",
+  "frontend": [
+    "HTML5",
+    "CSS3",
+    "Sass",
+    "Bootstrap",
+    "Javascript",
+    "React"
+  ],
+  "backend": [
+    "NodeJS",
+    "Discord Bots",
+    "Axios"
+  ]
+}

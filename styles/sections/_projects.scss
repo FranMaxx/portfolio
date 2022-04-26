@@ -1,0 +1,92 @@
+@use '../base' as *;
+
+.projects {
+    grid-area: projects;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas: 
+    "projects-title projects-title"
+    "projects-section projects-section"
+}
+
+.projects-title {
+    /* background-color: #ccc; */
+    padding: 20px;
+    border-radius: 4px;
+    grid-area: projects-title;
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    color: $title-color;
+}
+
+.projects-section {
+    grid-area: projects-section;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, auto);
+    display: flex;
+    justify-content: space-evenly;
+    grid-template-areas: 
+    "project-1 project-2"
+}
+
+.project-1 {
+    border-radius: 4px;
+    grid-area: project-1;
+    height: 250px;
+    width: 200px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    cursor: pointer;
+    transition: transform 0.6s;
+    position: relative;
+}
+
+.cards-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cards-container img {
+    width: 100%;
+}
+
+.new-tag {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 25%;
+    cursor: pointer;
+    position: absolute;
+    right: 5px;
+}
+
+.new-tag span {
+    margin-right: 15px;
+    padding: 10px;
+    border-radius: 15px;
+    color: #fff;
+    background-color: $second-color;
+    animation: zoom 1s infinite;
+}
+
+.project-2 {
+    border-radius: 4px;
+    grid-area: project-2;
+    height: 250px;
+    width: 200px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    cursor: pointer;
+    transition: transform 0.6s;
+}
+
+.project-1:hover , .project-2:hover {
+    transform: scale(1.1);
+} 

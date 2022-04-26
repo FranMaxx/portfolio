@@ -1,0 +1,24 @@
+@use '../base' as *;
+
+#myBtn {
+    display: none;
+    position: fixed;
+    top: 40px;
+    right: 40px;
+    z-index: 99;
+    border: 5px solid $second-color;
+    outline: none;
+    background-color: #fff;
+    cursor: pointer;
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+
+    i {
+        color: $second-color;
+    }
+}
+
+#myBtn:hover {
+    animation: mover 1s infinite  alternate;
+}

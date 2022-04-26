@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles/responsive.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="mainContainer">
+      <nav class="nav-bar">
+        <img src="images/logo.svg" alt="Logo" />
+        <ul class="list">
+          <li><a href="#skills">SKILLS</a></li>
+          <li><a href="#projects">PROJECTS</a></li>
+          <li><a href="index.html">CONTACT</a></li>
+        </ul>
+      </nav>
+      <div class="first-section">
+        <div class="circle-container">
+          <div class="circle">
+            <img alt="Profile picture" src="images/profile-picture.jpg"></img>
+          </div>
+        </div>
+        <div class="personal-info">
+            <div class="title">HELLO, I'M</div>
+            <div class="name"><span>FRANCISCO</span> LOZANO</div>
+            <div class="description">A <span class="description-span">Front-End Web Developer</span> passionate about creating interactive applications and experiences on the web.</div>
+        </div>
+      </div>
+      <div class="skills">
+        <div class="skills-title">
+          <div>Skills</div>
+        </div>
+        <div class="skills-section">
+          <div class="skill-1">
+            <div class="icon-container">
+              <i class="fa-solid fa-code"></i>
+            </div>
+            <div class="subTitle">Frontend</div>
+            <ul class="skillList-1"></ul>
+          </div>
+          <div class="skill-2">
+            <div class="icon-container">
+              <i class="fa-solid fa-database"></i>
+            </div>
+            <div class="subTitle">Backend</div>
+            <ul class="skillList-2"></ul>
+          </div>
+        </div>
+      </div>
+      <div class="projects">
+        <div class="projects-title">
+          <div>Projects</div>
+        </div>
+        <div class="projects-section">
+          <div class="project-1">
+            <div class="new-tag">
+              <span>New</span>
+            </div>
+            <div class="cards-container">
+              <img src="images/sidca.png">
+            </div>
+          </div>
+          
+          <div class="project-2">
+            <div class="cards-container">
+              <img src="images/lumi-fi.png">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cv">
+        <div class="cv-container">
+            <div class="cv-title">
+              <div>Curriculum Vitae</div>
+            </div>
+            <div class="button">
+              <button id="cv-button">Download file<i class="fa-solid fa-file-pdf"></i></button>
+            </div>
+        </div>
+      </div>
+      <footer class="footer">
+        <div class="footerIcons">
+          <a href="#" class="fa fa-facebook"></a>
+          <a href="#" class="fa fa-google"></a>
+          <a href="#" class="fa fa-twitter"></a>
+          <a href="#" class="fa-brands fa-discord"></a>
+        </div>
+      </footer>
+      <button onclick="topFunction()" id="myBtn"><i class="fa-solid fa-arrow-up"></i></button>
+    </div>
+    <script type="text/javascript" src="js/links.js"></script>
+    <script type="text/javascript" src="js/scrollAnimation.js"></script>
+    <script type="text/javascript" src="js/descCreator.js"></script>
+    <script type="text/javascript" src="js/skillCreator.js"></script>
+    <script src="https://kit.fontawesome.com/7d215cfe47.js" crossorigin="anonymous"></script>
+  </body>
+</html>

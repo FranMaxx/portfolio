@@ -1,0 +1,40 @@
+@use 'base' as *;
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+}
+
+.mainContainer {
+    width: 90%;
+    max-width: 1600px;
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas:
+    "nav-bar nav-bar"
+    "first-section first-section"
+    "skills skills"
+    "projects cv"
+    "footer footer"
+}
+
+.mainContainer > div,
+.nav-bar,
+.footer {
+    padding: 20px;
+    border-radius: 4px;
+}

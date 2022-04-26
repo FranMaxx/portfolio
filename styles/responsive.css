@@ -1,0 +1,94 @@
+@media screen and (max-width: 1240px) {
+    .projects-section {
+        grid-template-rows: repeat(2, auto);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        grid-gap: 40px;
+        grid-template-areas:
+            "project-1 project-1"
+            "project-2 project-2"
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .mainContainer {
+        grid-template-rows: repeat(6, auto);
+        grid-template-areas:
+            "nav-bar nav-bar"
+            "first-section first-section"
+            "skills skills"
+            "projects projects"
+            "cv cv"
+            "footer footer"
+    }
+    .skills {
+        grid-template-rows: repeat(2, auto);
+        grid-template-areas:
+            "skills-title skills-title"
+            "skills-section skills-section"
+    }
+    .skills-section {
+        grid-template-rows: repeat(2, auto);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        grid-gap: 80px;
+        grid-template-areas:
+            "skill-1 skill-1"
+            "skill-2 skill-2"
+    }
+    .projects {
+        grid-template-rows: repeat(2, auto);
+        grid-template-areas:
+            "projects-title projects-title"
+            "projects-section projects-section"
+    }
+    .projects-section {
+        grid-template-rows: repeat(2, auto);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        grid-template-areas:
+            "project-1 project-1"
+            "project-2 project-2"
+    }
+    .first-section {
+        grid-template-rows: repeat(2, auto);
+        grid-template-areas:
+        "personal-info personal-info"
+        "circle-container circle-container"
+    }
+    .nav-bar img {
+        display: none;
+    }
+    .list {
+        width: 100%;
+    }
+    .circle-container {
+        justify-content: center;
+    }
+    .circle {
+        width: 100%;
+        height: auto;
+    }
+    .personal-info {
+        align-items: center;
+        text-align: center;
+    }
+    .list li a {
+        font-size: 1em;
+        text-decoration: none;
+        color: #000;
+    }
+    .skill-1, .skill-2 {
+        width: 250px;
+    }
+    .footerIcons {
+        justify-content: space-between;
+        width: 100%;
+    }
+}

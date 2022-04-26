@@ -1,0 +1,32 @@
+@use '../base' as *;
+
+.nav-bar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    grid-area: nav-bar;
+}
+
+.list {
+    list-style: none;
+    width: 50%;
+    display: inherit;
+    flex-direction: inherit;
+    justify-content: space-around;
+}
+
+.list li a {
+    font-size: 1.2em;
+    text-decoration: none;
+    color: #000;
+}
+
+.list li:hover a {
+    color: $main-color;
+}
+
+.nav-bar img {
+    height: 80px;
+    width: 80px;
+}
